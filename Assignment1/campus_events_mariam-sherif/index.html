@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide - discover, schedule and register for campus events.">
+  <title>Home | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: the checkbox state is read by style.css -->
+  <input type="checkbox" id="theme-toggle" class="toggle-input" aria-label="Switch dark mode">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="brand">Campus Events Guide</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li><li><a href="events.html">Events</a></li><li><a href="event-details.html">Event Details</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="registration.html">Register</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="theme-track"><span class="theme-knob"></span></span>
+        <span class="theme-text">Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Find what is happening on campus.</h1>
+        <p>Campus Events Guide helps students discover events, read the details, check the timetable and register in a few minutes. Browse the featured events below to get started.</p>
+        <a class="btn btn-accent" href="events.html">Browse all events</a>
+        <a class="btn btn-outline" href="schedule.html">See the timetable</a>
+      </div>
+      <img src="assets/tech-fest.png" alt="Tech Innovation Fest poster" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block;">
+      
+    </section>
+
+    <section class="section">
+      <h2>Featured events</h2>
+      <div class="card-grid">
+        <article class="event-card">
+          <img src="assets/tech-fest.png" alt="Poster for Tech Innovation Fest 2026" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block;">
+          <div class="card-body">
+            <p class="card-meta"><span class="badge">Upcoming</span> <span class="category">Technology</span></p>
+            <h3 class="card-title">Tech Innovation Fest 2026</h3>
+            <p>Date: 15 November 2026</p>
+            <p>Venue: Main Auditorium, Block A</p>
+            <a class="btn" href="event-details.html">View details</a>
+          </div>
+        </article>
+        <article class="event-card">
+          <img src="assets/career-fair.png" alt="Poster for Career Fair" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block;">
+          <div class="card-body">
+            <p class="card-meta"><span class="badge">Upcoming</span> <span class="category">Careers</span></p>
+            <h3 class="card-title">Career Fair</h3>
+            <p>Date: 28 November 2026</p>
+            <p>Venue: Sports Hall</p>
+            <a class="btn" href="events.html">View details</a>
+          </div>
+        </article>
+        <article class="event-card">
+          <img src="assets/music-night.png" alt="Poster for Open Mic Night" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block;">
+          <div class="card-body">
+            <p class="card-meta"><span class="badge">Upcoming</span> <span class="category">Music</span></p>
+            <h3 class="card-title">Open Mic Night</h3>
+            <p>Date: 5 December 2026</p>
+            <p>Venue: Student Courtyard</p>
+            <a class="btn" href="events.html">View details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <h2>Why use this guide?</h2>
+      <ul class="feature-list">
+        <li>See upcoming and past events in one catalogue.</li>
+        <li>Read the full agenda and entry information before you go.</li>
+        <li>Check dates, times and venues in the timetable.</li>
+        <li>Register online with a simple form.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Campus Events Guide</strong><br>Your one place for everything happening on campus.</p>
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+      <p class="copy">&copy; 2026 Campus Events Guide. Student project.</p>
+    </div>
+  </footer>
+</body>
+</html>

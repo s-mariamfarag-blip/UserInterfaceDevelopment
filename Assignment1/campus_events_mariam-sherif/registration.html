@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide - discover, schedule and register for campus events.">
+  <title>Register | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: the checkbox state is read by style.css -->
+  <input type="checkbox" id="theme-toggle" class="toggle-input" aria-label="Switch dark mode">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="brand">Campus Events Guide</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li><li><a href="event-details.html">Event Details</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="registration.html" class="active" aria-current="page">Register</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="theme-track"><span class="theme-knob"></span></span>
+        <span class="theme-text">Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="reg-banner">
+        <h1>Register: Tech Innovation Fest 2026</h1>
+        <p><strong>Date:</strong> 15 November 2026 | <strong>Time:</strong> 10:00 AM - 4:00 PM | <strong>Venue:</strong> Main Auditorium, Block A</p>
+      </div>
+
+      <div class="reg-layout">
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <legend>About you</legend>
+            <div class="field">
+              <label for="name">Attendee name</label>
+              <input type="text" id="name" name="name" required maxlength="50" pattern="[A-Za-z ]{2,50}" placeholder="e.g. Omar Hassan" title="Letters and spaces only, 2 to 50 characters">
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" required maxlength="80" placeholder="you@university.edu">
+            </div>
+            <div class="field">
+              <label for="studentid">Student ID (8 digits)</label>
+              <input type="text" id="studentid" name="studentid" required maxlength="8" pattern="[0-9]{8}" inputmode="numeric" placeholder="20261234" title="Exactly 8 digits">
+            </div>
+            <div class="field">
+              <label for="portfolio">Portfolio or LinkedIn link (optional)</label>
+              <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com">
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your visit</legend>
+            <div class="field">
+              <label for="event">Event choice</label>
+              <select id="event" name="event" required>
+                <option value="">Select an event</option>
+                <option selected>Tech Innovation Fest 2026</option>
+                <option>Career Fair</option>
+                <option>Open Mic Night</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="tickets">Number of tickets (1 to 5)</label>
+              <input type="number" id="tickets" name="tickets" min="1" max="5" value="1" required>
+            </div>
+            <div class="field">
+              <label for="arrival-date">Arrival date</label>
+              <input type="date" id="arrival-date" name="arrival_date" min="2026-11-15" max="2026-11-15" value="2026-11-15" required>
+            </div>
+            <div class="field">
+              <label for="arrival-time">Arrival time</label>
+              <input type="time" id="arrival-time" name="arrival_time" min="09:30" max="16:00" required>
+            </div>
+            <div class="field">
+              <label for="interest">Interest in workshops (1 to 10)</label>
+              <input type="range" id="interest" name="interest" min="1" max="10" value="5">
+            </div>
+            <div class="field">
+              <label for="badge-color">Name badge colour</label>
+              <input type="color" id="badge-color" name="badge_color" value="#1b4965">
+            </div>
+            <div class="field">
+              <label for="id-photo">Upload student ID photo</label>
+              <input type="file" id="id-photo" name="id_photo" accept="image/*" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ticket type</legend>
+            <div class="choice">
+              <input type="radio" id="t-student" name="ticket" value="student" checked>
+              <label for="t-student">Student (free)</label>
+            </div>
+            <div class="choice">
+              <input type="radio" id="t-guest" name="ticket" value="guest">
+              <label for="t-guest">Guest ($5)</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sessions you plan to attend</legend>
+            <div class="choice">
+              <input type="checkbox" id="s-showcase" name="sessions" value="showcase" checked>
+              <label for="s-showcase">Student project showcase</label>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="s-workshop" name="sessions" value="workshop">
+              <label for="s-workshop">Web development workshop</label>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="s-panel" name="sessions" value="panel">
+              <label for="s-panel">Industry panel</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Extra information</legend>
+            <div class="field field-wide">
+              <label for="access">Access needs</label>
+              <textarea id="access" name="access" rows="4" maxlength="300" placeholder="Tell us if you need step-free access, a quiet space, etc."></textarea>
+            </div>
+            <div class="choice">
+              <input type="checkbox" id="agree" name="agree" required>
+              <label for="agree">I agree to follow the campus event rules.</label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-accent">Confirm registration</button>
+        </form>
+
+        <aside class="contact-box">
+          <h2>Event contact</h2>
+          <p>Questions about the event? Get in touch with the organisers.</p>
+          <ul>
+            <li><strong>Organiser:</strong> Student Activities Office</li>
+            <li><strong>Email:</strong> <a href="mailto:events@campus.example">events@campus.example</a></li>
+            <li><strong>Phone:</strong> 0100 000 0000</li>
+            <li><strong>Office:</strong> Block B, Room 12</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Campus Events Guide</strong><br>Your one place for everything happening on campus.</p>
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+      <p class="copy">&copy; 2026 Campus Events Guide. Student project.</p>
+    </div>
+  </footer>
+</body>
+</html>

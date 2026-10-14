@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide - discover, schedule and register for campus events.">
+  <title>Schedule | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: the checkbox state is read by style.css -->
+  <input type="checkbox" id="theme-toggle" class="toggle-input" aria-label="Switch dark mode">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="brand">Campus Events Guide</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li><li><a href="event-details.html">Event Details</a></li><li><a href="schedule.html" class="active" aria-current="page">Schedule</a></li><li><a href="registration.html">Register</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="theme-track"><span class="theme-knob"></span></span>
+        <span class="theme-text">Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <h1>Campus event timetable</h1>
+      <p>All upcoming events at a glance. Scroll sideways on small screens.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Events from September to December 2026</caption>
+          <thead>
+            <tr>
+              <th scope="col">Event</th>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Venue</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Welcome Week (past)</td>
+              <td>14 September 2026</td>
+              <td>9:00 AM - 3:00 PM</td>
+              <td>Campus Lawn</td>
+            </tr>
+            <tr>
+              <td>Campus Hackathon (past)</td>
+              <td>3 October 2026</td>
+              <td>9:00 AM - 9:00 PM</td>
+              <td>Computer Lab 2</td>
+            </tr>
+            <tr class="featured-row">
+              <td><a href="event-details.html">Tech Innovation Fest 2026</a> (featured)</td>
+              <td>15 November 2026</td>
+              <td>10:00 AM - 4:00 PM</td>
+              <td>Main Auditorium, Block A</td>
+            </tr>
+            <tr>
+              <td>Career Fair</td>
+              <td>28 November 2026</td>
+              <td>10:00 AM - 2:00 PM</td>
+              <td>Sports Hall</td>
+            </tr>
+            <tr>
+              <td>Open Mic Night</td>
+              <td>5 December 2026</td>
+              <td>6:00 PM - 9:00 PM</td>
+              <td>Student Courtyard</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><a class="btn btn-accent" href="registration.html">Register for the featured event</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Campus Events Guide</strong><br>Your one place for everything happening on campus.</p>
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+      <p class="copy">&copy; 2026 Campus Events Guide. Student project.</p>
+    </div>
+  </footer>
+</body>
+</html>

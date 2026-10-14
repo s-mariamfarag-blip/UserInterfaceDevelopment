@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Campus Events Guide - discover, schedule and register for campus events.">
+  <title>Event Details | Campus Events Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- CSS-only dark mode: the checkbox state is read by style.css -->
+  <input type="checkbox" id="theme-toggle" class="toggle-input" aria-label="Switch dark mode">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="brand">Campus Events Guide</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li><li><a href="events.html">Events</a></li><li><a href="event-details.html" class="active" aria-current="page">Event Details</a></li><li><a href="schedule.html">Schedule</a></li><li><a href="registration.html">Register</a></li>
+        </ul>
+      </nav>
+      <label for="theme-toggle" class="theme-label" title="Toggle dark mode">
+        <span class="theme-track"><span class="theme-knob"></span></span>
+        <span class="theme-text">Dark mode</span>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <article class="detail">
+        <header class="detail-head">
+          <h1>Tech Innovation Fest 2026</h1>
+          <p class="card-meta"><span class="badge">Upcoming</span> <span class="category">Technology</span></p>
+        </header>
+
+        <div class="detail-top">
+          <img src="assets/tech-fest.png" alt="Tech Innovation Fest 2026 poster" style="width: 100%; height: 180px; object-fit: cover; object-position: center; display: block;">
+          <div>
+            <h2>About the event</h2>
+            <p>Tech Innovation Fest is a one-day showcase of student projects, short talks and hands-on workshops. Come to see what your classmates have built, meet industry guests and try new tools.</p>
+            <ul class="info-list">
+              <li><strong>Date:</strong> 15 November 2026</li>
+              <li><strong>Time:</strong> 10:00 AM - 4:00 PM</li>
+              <li><strong>Venue:</strong> Main Auditorium, Block A</li>
+            </ul>
+            <a class="btn btn-accent" href="registration.html">Register for this event</a>
+          </div>
+        </div>
+
+        <h2>Agenda</h2>
+        <ol class="agenda">
+          <li><strong>10:00 AM</strong> - Welcome and opening talk</li>
+          <li><strong>11:00 AM</strong> - Student project showcase</li>
+          <li><strong>12:30 PM</strong> - Lunch break</li>
+          <li><strong>1:30 PM</strong> - Web development workshop</li>
+          <li><strong>3:00 PM</strong> - Industry panel and Q&amp;A</li>
+          <li><strong>3:45 PM</strong> - Awards and closing</li>
+        </ol>
+
+        <h2>Ticket and entry information</h2>
+        <ul>
+          <li>Entry is free for current students. Please bring your student ID.</li>
+          <li>Guest ticket: $5 at the door.</li>
+          <li>Seats are limited, so please register early.</li>
+          <li>The venue is wheelchair accessible.</li>
+        </ul>
+
+        <h2>Event media</h2>
+        <figure class="media">
+          <figcaption>Listen to the Tech Fest theme tune:</figcaption>
+          <audio controls>
+            <source src="assets/event-theme.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </figure>
+
+        <h2>Write a review</h2>
+        <p>Been to a past Tech Fest? Tell us what you think.</p>
+        <form class="form" action="#" method="post" enctype="multipart/form-data">
+          <div class="field">
+            <label for="rev-name">Your name</label>
+            <input type="text" id="rev-name" name="reviewer" required maxlength="40" pattern="[A-Za-z ]{2,40}" placeholder="e.g. Sara Ahmed" title="Letters and spaces only, 2 to 40 characters">
+          </div>
+          <div class="field">
+            <label for="rev-email">Email</label>
+            <input type="email" id="rev-email" name="email" required placeholder="you@university.edu">
+          </div>
+          <div class="field">
+            <label for="rev-rating">Rating</label>
+            <select id="rev-rating" name="rating" required>
+              <option value="">Choose a rating</option>
+              <option>5 - Excellent</option>
+              <option>4 - Good</option>
+              <option>3 - Average</option>
+              <option>2 - Poor</option>
+              <option>1 - Very poor</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="rev-text">Your review</label>
+            <textarea id="rev-text" name="review" rows="5" required minlength="10" maxlength="500" placeholder="Write 10 to 500 characters"></textarea>
+          </div>
+          <div class="field field-wide">
+            <label for="rev-photo">Upload a photo (optional)</label>
+            <input type="file" id="rev-photo" name="photo" accept="image/*">
+          </div>
+          <div class="field field-wide">
+            <button type="submit" class="btn btn-accent">Send review</button>
+          </div>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>Campus Events Guide</strong><br>Your one place for everything happening on campus.</p>
+      <ul class="social-list">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://x.com/" target="_blank" rel="noopener">X (Twitter)</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+      <p class="copy">&copy; 2026 Campus Events Guide. Student project.</p>
+    </div>
+  </footer>
+</body>
+</html>
